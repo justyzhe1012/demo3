@@ -33,15 +33,7 @@ def callback():
 
     return 'OK'
 
- # 訊息傳遞區塊
- # 基本上程式編輯都在這個function
-handler = WebhookHandler('1994241049acb267fc341cbbadefdbca')
-line_bot_api.push_message('Ub08a25b46cc48ec5f4be8ef499820a4f', TextSendMessage(text='你可以開始了'))
- # 監聽所有來自 /callback 的 Post Request
-@app.route("/callback", methods=['POST'])
-def callback():
-     # get X-Line-Signature header value
-     signature = request.headers['X-Line-Signature']
+
  # get request body as text body = request.get_data(as_text=True) app.logger.info("Request body: " + body) # handle webhook body try:     handler.handle(body, signature) except InvalidSignatureError:     abort(400) return 'OK'
  # 訊息傳遞區塊
  # 基本上程式編輯都在這個function
