@@ -104,28 +104,6 @@ def handle_message(event):
                                 uri='https://drive.google.com/drive/folders/1RJm3tqbAMfLisgeaTq8qoHFVdUU708CR?usp=sharing'
                             )
                         ]
-                    ),
-                    CarouselColumn(
-                        thumbnail_image_url='https://www.freepik.com/free-vector/man-relaxing-office-break-from-work_10780108.htm#query=time%20management%20catroon&position=3&from_view=search&track=ais',
-                        title='總時程表',
-                        text='時間照過來!',
-                        actions=[
-                            URIAction(
-                                label='看時程表!',
-                                uri='https://docs.google.com/spreadsheets/d/1KXePCMR5KiKNJe6mzjcFDUih60wwhzm_3v2Ack9YbGU/edit?usp=sharing'
-                            )
-                        ]
-                    ),
-                    CarouselColumn(
-                        thumbnail_image_url='https://www.freepik.com/free-vector/office-table-top-view-business-flat-web-infographic-concept-staff-around-table-report-analytics-working-tablet-laptop-empty-background-brainstorm-report-planning-creative-people-collection_11467584.htm#query=meeting%20cartoon&position=3&from_view=search',
-                        title='開會去!',
-                        text='來開會囉~',
-                        actions=[
-                            URIAction(
-                                label='連結在這邊',
-                                uri='https://meet.google.com/den-yyxq-htq'
-                            )
-                        ]
                     )
                 ]
             )
