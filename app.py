@@ -47,16 +47,12 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://i.imgur.com/wpM584d.jpg',
-                        actions=[
-                            MessageAction(
-                                label='小小提醒',
-                                text='點選下方「填寫表單」即可! 請記得附上相關證明!'
-                            ),
+                        actions=(
                             URIAction(
                                 label='點我填寫!',
                                 uri='https://forms.gle/nEZBdNT3p1QYXZdE7'
                             )
-                        ]
+                        )
                     ),
                     ImageCarouselColumn(
                         image_url='https://i.imgur.com/W7nI6fg.jpg',
