@@ -47,11 +47,9 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://i.imgur.com/wpM584d.jpg',
-                        actions=(
-                            URIAction(
+                        actions=URIAction(
                                 label='點我填寫!',
-                                uri='https://forms.gle/nEZBdNT3p1QYXZdE7'
-                            )
+                                uri='https://forms.gle/nEZBdNT3p1QYXZdE7' 
                         )
                     ),
                     ImageCarouselColumn(
