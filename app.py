@@ -150,7 +150,7 @@ def handle_message(event):
     elif re.match('幫你搔癢',message):
         line_bot_api.reply_message(event.reply_token, TextSendMessage("有事不趕快做?!  快去吧~"))
     else:
-        line_bot_api.reply_message(event.reply_token, TextSendMessage("有何貴幹呢? 請按1~"))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage("有何貴幹呢? 請打「k」~"))
 
 
 
