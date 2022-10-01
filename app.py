@@ -15,7 +15,7 @@ app = Flask(__name__)
 line_bot_api = LineBotApi('Lz3DQQxDHAndFnJJdQko+TlzV2ylapoCUgp12mtaCeRlTfJieBKwUEl57v3E5ZTVnCiVxs/HWhqk7t8SDG1q+giRdcul9RBeN2AutidC2j0gbOSnNtR2H3b2EcQWXjy2LZWYz7p0SoLlEFHNLz11egdB04t89/1O/w1cDnyilFU=')
  # 必須放上自己的Channel Secret
 handler = WebhookHandler('1994241049acb267fc341cbbadefdbca')
-line_bot_api.push_message('Ub08a25b46cc48ec5f4be8ef499820a4f', TextSendMessage(text='您可以開始囉! 請輸入「stp」以進行下一步😁'))
+line_bot_api.push_message('Ub08a25b46cc48ec5f4be8ef499820a4f', TextSendMessage(text='打入「1」開始'))
 
  # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
@@ -40,18 +40,23 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = text=event.message.text
-    if re.match('告訴我秘密',message):
+    if re.match('1',message):
         image_carousel_template_message = TemplateSendMessage(
-            alt_text='免費教學影片',
+            alt_text='我是幹部我驕傲',
             template=ImageCarouselTemplate(
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://i.imgur.com/wpM584d.jpg',
-                        action=PostbackAction(
-                            label='Python基礎教學影片',
-                            display_text='萬丈高樓平地起',
-                            data='action=努力不一定會成功，但不努力會很輕鬆'
-                        )
+                        actions=[
+                            MessageAction(
+                                label='小小提醒',
+                                text='點選下方「填寫表單」即可! 請記得附上相關證明!'
+                            ),
+                            URIAction(
+                                label='點我填寫!',
+                                uri='https://forms.gle/nEZBdNT3p1QYXZdE7'
+                            )
+                        ]
                     ),
                     ImageCarouselColumn(
                         image_url='https://i.imgur.com/W7nI6fg.jpg',
