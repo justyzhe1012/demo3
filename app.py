@@ -42,81 +42,88 @@ def handle_message(event):
     message = text=event.message.text
     if re.match('stp' ,message):
         carousel_template_message = TemplateSendMessage(
-            alt_text='很高興為您服務!',
+            alt_text='我是幹部我驕傲!',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
-                        thumbnail_image_url='https://img.freepik.com/free-vector/appointment-booking-with-calendar_52683-39831.jpg?w=1060&t=st=1664539536~exp=1664540136~hmac=015fee0ab0290a580f56a56be1d7e67f0da15e64dfae70e3bc8f4aa1ea274503',
-                        title='請假區',
-                        text='請假/遲到都要填喔',
+                        thumbnail_image_url='https://www.freepik.com/free-vector/young-businesswoman-showing-thumb-up-sign-cartoon-illustration_12898746.htm#query=manager%20cartoon&position=5&from_view=search',
+                        title='我是PM!',
+                        text='PM雲端連結',
                         actions=[
                             MessageAction(
-                                label='小小提醒',
-                                text='點選下方「填寫表單」即可! 請記得附上相關證明!'
+                                label='累了可以點我',
+                                text='送你一句話:「天空其實一直晴朗，只要你別一直盯著烏雲不放!」'
                             ),
                             URIAction(
-                                label='點我填寫!',
-                                uri='https://forms.gle/nEZBdNT3p1QYXZdE7'
+                                label='連結在這邊',
+                                uri='https://drive.google.com/drive/folders/12c89seGYtcDb8mmk6a-6eliXO8hbKFwQ?usp=sharing7'
                             )
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url='https://img.freepik.com/free-vector/teacher-standing-near-blackboard-holding-stick-isolated-flat-vector-illustration-cartoon-woman-character-near-chalkboard-pointing-alphabet_74855-8600.jpg?w=1060&t=st=1664539900~exp=1664540500~hmac=c1268b5956af2a1098b42f7f53b1b32f55b57531c0f810c35068a23ac1b4b3ae',
-                        title='補課區',
-                        text='開放當週上課影片!',
+                        thumbnail_image_url='https://www.freepik.com/free-vector/young-businesswoman-holding-tablet-thumb-up-cartoon-illustration_12898721.htm#query=businesswoman%20cartoon&position=1&from_view=search',
+                        title='我是學程部!',
+                        text='學程部雲端連結',
                         actions=[
                             MessageAction(
-                                label='小小提醒',
-                                text='影片只會開放到當週週三23:59喔!'
+                                label='累了可以點我',
+                                text='送你一句話:「只要你願意為自己努力，世界會給你驚喜!」'
                             ),
                             URIAction(
-                                label='點我補課去~',
-                                uri='https://youtube.com/playlist?list=PLZ0Kz0tBF3qMJ3WZlHqDQL5lACaC4IH1d'
+                                label='連結在這邊',
+                                uri='https://drive.google.com/drive/folders/1-7rmw-R14mJFdrKnD1dpy_hvtTTGqJbG?usp=sharing'
                             )
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url='https://img.freepik.com/free-vector/organic-flat-feedback-concept_52683-62653.jpg?w=1060&t=st=1664540164~exp=1664540764~hmac=8f2ca105a46de9edd37ee1a3e872d4a51cc7d45e5a8cf48da6cbe5394d26452d',
-                        title='本週回饋單',
-                        text='填寫心得!',
+                        thumbnail_image_url='https://www.freepik.com/free-vector/young-businesswoman-holding-smartphone-show-ok-sign-cartoon-illustration_12898719.htm#query=businesswoman%20cartoon&position=2&from_view=search',
+                        title='我是課程部!',
+                        text='課程部雲端連結',
                         actions=[
                             MessageAction(
-                                label='小小提醒',
-                                text='影片只會開放到當週週三23:59喔!'
+                                label='累了可以點我',
+                                text='送你一句話:「生命總有挫折，但那不是盡頭，只是在提醒你該堅持，還是該轉變!」'
                             ),
                             URIAction(
-                                label='點我填寫!',
-                                uri='https://forms.gle/H3mBHxHJ1imk7qtbA'
+                                label='連結在這邊',
+                                uri='https://drive.google.com/drive/folders/1-A3MQVjy4EOxGh4Ikz4hGKuh7zU-ugsE?usp=sharing'
                             )
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url='https://scontent.ftpe2-2.fna.fbcdn.net/v/t1.6435-9/83154430_3293543733994427_8630956035097493504_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4reFxnCHK8YAX8Z48Fr&_nc_ht=scontent.ftpe2-2.fna&oh=00_AT-S8oSmVVe8426yrVis__DwFqicVkPbYjYUs2ItAAGymg&oe=635A8B25',
-                        title='AC課作業繳交',
-                        text='請大家上傳自己的簡報!',
+                        thumbnail_image_url='https://www.freepik.com/free-vector/young-businesswoman-holding-tablet-cartoon-illustration_12898722.htm#query=businesswoman%20cartoon&position=11&from_view=search',
+                        title='我是品牌部!',
+                        text='品牌部雲端連結',
                         actions=[
                             MessageAction(
-                                label='小小提醒',
-                                text='繳交期限請參考學員手冊!'
+                                label='累了可以點我',
+                                text='送你一句話:「有一種溫柔溫暖的人，即使不知道方法，仍會努力想讓別人幸福!」'
                             ),
                             URIAction(
-                                label='點我繳交!',
-                                uri='https://drive.google.com/drive/folders/1cJaI75juZjzA3eQUzaxgJmXKSPCHF5gX?usp=sharing'
+                                label='連結在這邊',
+                                uri='https://drive.google.com/drive/folders/1RJm3tqbAMfLisgeaTq8qoHFVdUU708CR?usp=sharing'
                             )
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url='https://scontent.ftpe2-2.fna.fbcdn.net/v/t1.6435-9/83154430_3293543733994427_8630956035097493504_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4reFxnCHK8YAX8Z48Fr&_nc_ht=scontent.ftpe2-2.fna&oh=00_AT-S8oSmVVe8426yrVis__DwFqicVkPbYjYUs2ItAAGymg&oe=635A8B25',
-                        title='Coaching修改檔作業繳交',
-                        text='請大家上傳自己的簡報!',
+                        thumbnail_image_url='https://www.freepik.com/free-vector/man-relaxing-office-break-from-work_10780108.htm#query=time%20management%20catroon&position=3&from_view=search&track=ais',
+                        title='總時程表',
+                        text='時間照過來!',
                         actions=[
-                            MessageAction(
-                                label='小小提醒',
-                                text='繳交期限請參考學員手冊!'
-                            ),
                             URIAction(
-                                label='點我繳交!',
-                                uri='https://drive.google.com/drive/folders/1caa6ALoVrsyWqIFhT-YQ9hzIKobIDfkr?usp=sharing'
+                                label='看時程表!',
+                                uri='https://docs.google.com/spreadsheets/d/1KXePCMR5KiKNJe6mzjcFDUih60wwhzm_3v2Ack9YbGU/edit?usp=sharing'
+                            )
+                        ]
+                    ),
+                    CarouselColumn(
+                        thumbnail_image_url='https://www.freepik.com/free-vector/office-table-top-view-business-flat-web-infographic-concept-staff-around-table-report-analytics-working-tablet-laptop-empty-background-brainstorm-report-planning-creative-people-collection_11467584.htm#query=meeting%20cartoon&position=3&from_view=search',
+                        title='開會去!',
+                        text='來開會囉~',
+                        actions=[
+                            URIAction(
+                                label='連結在這邊',
+                                uri='https://meet.google.com/den-yyxq-htq'
                             )
                         ]
                     )
@@ -124,14 +131,16 @@ def handle_message(event):
             )
         )
         line_bot_api.reply_message(event.reply_token, carousel_template_message)
-    elif re.match('點選下方「填寫表單」即可! 請記得附上相關證明!',message):
-        line_bot_api.reply_message(event.reply_token, TextSendMessage("還有其他問題的話歡迎問我!"))
-    elif re.match('影片只會開放到當週週三23:59喔!',message):
-        line_bot_api.reply_message(event.reply_token, TextSendMessage("還有其他問題的話歡迎問我!"))
-    elif re.match('繳交期限請參考學員手冊!',message):
-        line_bot_api.reply_message(event.reply_token, TextSendMessage("還有其他問題的話歡迎問我!"))
+    elif re.match('送你一句話:「天空其實一直晴朗，只要你別一直盯著烏雲不放!」',message):
+        line_bot_api.reply_message(event.reply_token, TextSendMessage("加油啦!"))
+    elif re.match('送你一句話:「只要你願意為自己努力，世界會給你驚喜!」',message):
+        line_bot_api.reply_message(event.reply_token, TextSendMessage("加油啦!"))
+    elif re.match('送你一句話:「生命總有挫折，但那不是盡頭，只是在提醒你該堅持，還是該轉變!」',message):
+        line_bot_api.reply_message(event.reply_token, TextSendMessage("加油啦!"))
+    elif re.match('送你一句話:「有一種溫柔溫暖的人，即使不知道方法，仍會努力想讓別人幸福!」送你一句話:「有一種溫柔溫暖的人，即使不知道方法，仍會努力想讓別人幸福!」',message):
+        line_bot_api.reply_message(event.reply_token, TextSendMessage("加油啦!"))
     else:
-        line_bot_api.reply_message(event.reply_token, TextSendMessage("輸入「stp」才有下一步喔😅"))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage("有何貴幹呢? 請按1~"))
 
 
 
